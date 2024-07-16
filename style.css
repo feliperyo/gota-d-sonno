@@ -1,230 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    height: 100%;
-    overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .head {
-    background-color: #6D6DAA;
-    height: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #812f86;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .head p {
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 1px solid #000;
-    height: 4rem;
-    width: 100%;
-    padding-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid #000;
+  height: 4rem;
+  width: 100%;
+  padding-left: 2rem;
 }
 
 .navbar a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
 }
 
 main {
-    width: 100%;
-    height: calc(100vh - 6rem);
-    background-color: #9FC5FF;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-.div-women {
-    width: 25%;
+.items-main {
+  position: absolute;
+  right: 15rem;
+  top: 2rem;
+  display: flex;
+  gap: 17.5rem;
+  align-items: flex-end;
 }
 
-.women {
-    height: 90vh;
+main .rotulo img {
+  width: 100vw;
 }
 
-.main-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    width: 50%;
+.div-btn {
+  margin-bottom: 5rem;
+  transition: 0.5s;
 }
 
 .btn-buy {
-    color: #9976C8;
-    background-color: #6CFC7C;
-    font-size: 3rem;
-    padding: .5rem 3rem;
-    font-weight: bold;
-    border-radius: 3rem;
-    border: none;
-    cursor: pointer;
-    margin-top: 7rem;
+  color: #5d1b66;
+  background-color: #fff;
+  font-size: 3rem;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 7rem;
+  width: 35rem;
+  transition: 0.5s;
 }
 
-.main-center h1 {
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
+.div-btn:hover {
+  margin-bottom: 6rem;
+}
+
+.btn-buy:hover {
+  color: #fff;
+  background-color: #5d1b66;
 }
 
 .main-infos-right {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 .main-infos-right img {
-    width: 8rem;
-    height: 8rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .main-infos-right p {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .main-infos-right div {
-    width: 10rem;
+  width: 10rem;
 }
 
 @media screen and (max-width: 1030px) {
-    main {
-        height: 40vh;
-    }
-
-    .women {
-        height: 40vh;
-    }
-
-    .main-center {
-        gap: 2rem;
-        height: 40vh;
-    }
-
-    .btn-buy {
-        font-size: 2rem;
-        margin-top: 5rem;
-        padding: .4rem 2rem;
-    }
-
-    .main-center h1 {
-        font-size: 2.3rem;
-    }
-
-    .main-infos-right {
-        gap: 1rem;
-    }
-
-    .main-infos-right img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .main-infos-right p {
-        font-size: 1rem;
-    }
-
-    .main-infos-right div {
-        width: 7rem;
-    }
 }
 
 @media screen and (max-width: 500px) {
-
-    .navbar {
-        justify-content: center;
-        padding-left: 0rem;
-    }
-
-    main {
-        height: calc(100vh - 6rem);
-        flex-direction: column;
-    }
-
-    .div-women {
-        width: 90%;
-    }
-
-    .women {
-        height: 40vh;
-        margin-bottom: -10rem;
-        margin-left: 2rem;
-    }
-
-    .logo {
-        margin-left: 10rem;
-    }
-
-    .main-center {
-        gap: 2rem;
-        height: 30vh;
-        width: 90%;
-    }
-
-    .btn-buy {
-        font-size: 2rem;
-        padding: .6rem 3.2rem;
-    }
-
-    .main-center h1 {
-        font-size: 2rem;
-        z-index: 1;
-    }
-
-    .main-infos-right {
-        flex-direction: row;
-        gap: 3rem;
-    }
-
-    .main-infos-right img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .main-infos-right p {
-        font-size: 1rem;
-    }
-
-    .main-infos-right div {
-        width: 10rem;
-    }
 }
 
 @media screen and (max-width: 400px) {
-
-    main {
-        height: 100vh;
-    }
-
-    .btn-buy {
-        font-size: 1.7rem;
-        padding: .7rem 3.4rem;
-    }
-
 }
