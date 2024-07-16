@@ -114,11 +114,8 @@ main .rotulo img {
   width: 10rem;
 }
 
-@media screen and (max-width: 1030px) {
-}
+@media screen and (max-width: 1030px) {}
 
-@media screen and (max-width: 500px) {
-}
+@media screen and (max-width: 500px) {}
 
-@media screen and (max-width: 400px) {
-}
+@media screen and (max-width: 400px) {}
